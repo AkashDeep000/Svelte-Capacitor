@@ -45,5 +45,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: app-release-unsigned
-          path: android/app/build/outputs/app/release/app-release-unsigned.apk
+          path: android/app/build/outputs/apk/release/app-release-unsigned.apk
           retention-days: 60
