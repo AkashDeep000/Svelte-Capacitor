@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: "zulu"
-          java-version: "11"
+          java-version: "17"
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -32,7 +32,7 @@ jobs:
 
       - name: Capacitor add android
         run: npx cap add android
-        
+
       - name: Capacitor update
         run: npx cap update
 
