@@ -53,5 +53,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
          file: "android/app/build/outputs/apk/release/app-release-unsigned.apk"
-         tags: true
-         draft: true
+         tags: false
+         draft: false
