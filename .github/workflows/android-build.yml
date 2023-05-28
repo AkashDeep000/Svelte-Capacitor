@@ -51,8 +51,10 @@ jobs:
           retention-days: 60
 
       - name: Upload to release
-        uses: svenstaro/upload-release-action@v2
+        uses: "marvinpinto/action-automatic-releases@latest"
+
         with:
-          file: "android/app/build/outputs/apk/debug/app-debug.apk"
-          tag: ${{ refs/tags/github.ref }}
-          overwrite: true
+          file: |
+            "android/app/build/outputs/apk/debug/app-debug.apk"
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
