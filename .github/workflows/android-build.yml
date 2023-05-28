@@ -30,6 +30,9 @@ jobs:
       - name: Build Svelte app
         run: npm run build
 
+      - name: Capacitor add android
+        run: npx cap add android
+        
       - name: Capacitor update
         run: npx cap update
 
